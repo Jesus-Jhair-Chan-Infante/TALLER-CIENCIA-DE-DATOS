@@ -21,5 +21,5 @@ histogram = alt.Chart(df).mark_bar().encode(
 
 st.altair_chart(histogram, use_container_width=True)
 
-st.page_link("Grafica_de_barras.py", label="Anterior", icon="⬅👈")
-st.page_link("Grafica_de_caja.py", label="Siguiente", icon="➡👉")
+st.page_link("Grafica_de_barras.py", label="Anterior", icon="👈")
+st.page_link("Grafica_de_caja.py", label="Siguiente", icon="👉")
