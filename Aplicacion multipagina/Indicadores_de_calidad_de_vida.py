@@ -17,4 +17,4 @@ st.markdown("""
             """)
 
 
-st.page_link("Tabla_de_datos.py", label="Siguiente", icon="➡️")
+st.page_link("Tabla_de_datos.py", label="Siguiente", icon="➡👉")
