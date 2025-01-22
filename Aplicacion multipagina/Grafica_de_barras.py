@@ -31,5 +31,5 @@ chart = alt.Chart(df_bar).mark_bar().encode(
 st.altair_chart(chart, use_container_width=True)
 
 
-st.page_link("Tabla_de_datos.py", label="Anterior", icon="⬅️")
-st.page_link("Histograma.py", label="Siguiente", icon="➡️")
+st.page_link("Tabla_de_datos.py", label="Anterior", icon="👈")
+st.page_link("Histograma.py", label="Siguiente", icon="👉")
