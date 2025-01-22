@@ -24,4 +24,4 @@ st.altair_chart(scatter_chart, use_container_width=True)
 
 st.write(f'Correlación entre {var_1} y {var_2}: {np.round(df[var_1].corr(df[var_2]), 2)}')
 
-st.page_link("Grafica_de_caja.py", label="Anterior", icon="⬅️")
+st.page_link("Grafica_de_caja.py", label="Anterior", icon="👈")
