@@ -22,5 +22,5 @@ box_plot = alt.Chart(df).mark_boxplot().encode(
 
 st.altair_chart(box_plot, use_container_width=True)
 
-st.page_link("Histograma.py", label="Anterior", icon="⬅️")
-st.page_link("Grafica_de_dispersion.py", label="Siguiente", icon="➡️")
+st.page_link("Histograma.py", label="Anterior", icon="👈")
+st.page_link("Grafica_de_dispersion.py", label="Siguiente", icon="👉")
