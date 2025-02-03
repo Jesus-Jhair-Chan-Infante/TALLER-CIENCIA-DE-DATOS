@@ -9,7 +9,7 @@ df = pd.read_csv("OECD.csv")
 st.title("Análisis de Esperanza de Vida")
 
 #Información
-st.markdown("Identificaremos la evolución de estos datos apartir de la siguiente gráfica, en esta parte es mas especifico, seleccionamos el país que queremos visualizar y puede ser dividido por hombres y mujeres.")
+st.markdown("Se puede ver el cómo han evolucionado estos datos a lo largo del tiempo mediante la siguiente gráfica. En esta sección, podremos ser más específicos, seleccionando el país que nos interese y dividiendo la información por hombres y mujeres.")
 
 # Sidebar para opciones de filtrado
 st.sidebar.header("Filtros")
@@ -19,7 +19,7 @@ paises_disponibles = df["Country"].unique()
 paises_seleccionados = st.sidebar.multiselect(
     "Selecciona países",
     options=paises_disponibles,
-    default=paises_disponibles[0]  # Selecciona un país por defecto
+    default=paises_disponibles[3]  # Selecciona un país por defecto
 )
 
 # Opción para diferenciar por género
