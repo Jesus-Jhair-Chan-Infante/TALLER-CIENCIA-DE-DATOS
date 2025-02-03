@@ -34,10 +34,10 @@ df = pd.read_csv("OECD.csv", sep=",")
 st.title("Distribución de la Esperanza de Vida")
 
 #Información
-st.markdown("Conoceremos la distribución de los datos reflejados en una caja y bigotes, de igual manera podemos seleccionar el año, miembros o no mieembros, género, etc.")
+st.markdown("Se puede a analizar cómo se distribuyen los datos mediante un gráfico de caja y bigotes. Además, tendremos la opción de elegir el año, los países miembros o no miembros, el género, y otros parámetros según lo que queramos examinar.")
 
-# Selección del año
-year = st.radio("Seleccione el año", options=range(2015, 2024), index=8)
+# Selección de año con lista desplegable
+year = st.selectbox("Seleccione el año", options=list(range(2015, 2024)), index=8)
 
 # Filtros de agrupamiento
 st.write("Opciones de filtrado:")
