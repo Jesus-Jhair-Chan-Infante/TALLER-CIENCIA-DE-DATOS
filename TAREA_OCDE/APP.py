@@ -1,19 +1,36 @@
 import streamlit as st
 
-# Configuración de la app
-st.set_page_config(page_title="Análisis de Esperanza de Vida en la OCDE", page_icon="📊", layout="wide")
+# Configurar el diseño de la página
+st.set_page_config(page_title="Aplicación de Análisis", layout="wide", page_icon="📊")
 
-# Título
-st.title("Bienvenido al Análisis de Esperanza de Vida en la OCDE")
-
-# Descripción breve
+# Aplicar estilo personalizado
 st.markdown(
-    "Esta aplicación permite analizar y visualizar los datos de esperanza de vida de los países de la OCDE. "
-    "Puedes navegar por las secciones de la aplicación usando el menú de la izquierda."
+    """
+    <style>
+        .sidebar .sidebar-content {
+            background-color: #f0f2f6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .stButton>button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        .stTitle {
+            color: #2E3B4E;
+            font-weight: bold;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
-# Sidebar con enlaces a las páginas
-st.sidebar.header("Navegación")
-st.sidebar.page_link("pages/INTRODUCCION.py", label="📘 Introducción")
-st.sidebar.page_link("pages/DISTRIBUCION.py", label="📊 Distribución de la Esperanza de Vida")
-st.sidebar.page_link("pages/EVOLUCION.py", label="📈 Evolución de la Esperanza de Vida")
+pg = st.navigation([
+    st.Page("INTRODUCCION.py"),
+    st.Page("DISTRIBUCION.py"),
+    st.Page("EVOLUCION.py")
+])
+
+pg.run()
